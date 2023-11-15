@@ -6,10 +6,13 @@ import requests
 # Function to convert Excel to JSON
 # test
 
-import subprocess
+# import subprocess
 
-# Install openpyxl
-subprocess.run(["pip", "install", "openpyxl"])
+# # Install openpyxl
+# subprocess.run(["pip", "install", "openpyxl"])
+# Import openpyxl directly, assuming it's already installed
+import openpyxl
+
 def convert_excel_to_json(file):
     df = pd.read_excel(file)
     json_data = df.to_json(orient="records", lines=True)
