@@ -11,7 +11,7 @@ import requests
 # # Install openpyxl
 # subprocess.run(["pip", "install", "openpyxl"])
 # Import openpyxl directly, assuming it's already installed
-import openpyxl
+from openpyxl import load_workbook
 
 def convert_excel_to_json(file):
     df = pd.read_excel(file)
