@@ -17,7 +17,7 @@ def submit_to_api(json_data, api_key):
     }
     url = 'https://bypnetwork.jobboard.io/api/v1/jobs.json'
     response = requests.post(url, data=json_data, headers=headers)
-    print(response,"responseresponseresponse")
+    # print(response,"responseresponseresponse")
     return response
 
 def main():
@@ -38,7 +38,7 @@ def main():
         json_data_array.append(json_data)  # Push JSON data to the array
 
         # Display JSON data
-        # st.write("JSON Data:", json_data)
+        st.write("JSON Data:", json_data)
 
         # API Key input
         api_key = st.text_input("Enter your API Key", type="password")
